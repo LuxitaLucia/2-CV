@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dabu Luxita</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module">
-      import tailwindConfig from "./tailwind.config.js";
-      tailwind.config = tailwindConfig;
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
     </script>
   </head>
+
   <body>
-    <header class="relative w-full h-72 flex items-end">
+    <header
+      class="relative w-full aspect-[16/6] overflow-hidden flex items-end"
+    >
       <img
         src="natureimg.jpeg"
         alt="nature image"
@@ -19,7 +27,7 @@
       />
 
       <h1
-        class="relative z-10 mb-2 text-white text-xl font-bold bg-slate-900/40 px-4 py-2 rounded-xl"
+        class="relative z-10 m-4 text-white text-2xl font-bold bg-black/40 px-4 py-2 rounded-xl"
       >
         Dabu Luxita Georgiana
       </h1>
